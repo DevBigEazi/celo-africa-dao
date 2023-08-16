@@ -179,7 +179,7 @@ const Footer = () => {
         gap="5"
         fontWeight="400"
         fontSize="lg"
-        fontFamily="sofia-san"
+        fontFamily="sofia-sans"
       >
         <Text textAlign="center">&copy; {currentYear} Celo Inc.</Text>
         <Flex justifyContent="space-between">

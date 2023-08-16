@@ -85,14 +85,14 @@ const FeaturedArticles = () => {
                         />
                       </ListItem>
                       <Text
-                        fontFamily="sofian-sans"
+                        fontFamily="sofia-sans"
                         fontSize="16px"
                         fontWeight="700"
                       >
                         {blog.author}
                       </Text>
                       <Text
-                        fontFamily="sofian-sans"
+                        fontFamily="sofia-sans"
                         fontSize="16px"
                         fontWeight="200"
                       >
@@ -319,7 +319,7 @@ const FeaturedArticles = () => {
                       <ListItem>
                         <Flex
                           columnGap="10px"
-                          fontFamily="sofian-sans"
+                          fontFamily="sofia-sans"
                           fontSize={{ base: "12", sm: "16px" }}
                           fontWeight="300"
                         >
@@ -335,7 +335,7 @@ const FeaturedArticles = () => {
                         </Text>
                         <Flex
                           columnGap="10px"
-                          fontFamily="sofian-sans"
+                          fontFamily="sofia-sans"
                           fontSize={{ base: "12", sm: "16px" }}
                           fontWeight="300"
                         >
