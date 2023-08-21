@@ -67,6 +67,26 @@ a {
   }
 }
 
+#mission {
+  background-image: url("../img/mission.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mission2 {
+  background-image: url("../img/mission.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#mission3 {
+  background-image: url("../img/mission.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 477px) {
   .container {
     width: 1100px;
@@ -149,3 +169,5 @@ a {
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
 }
+
+

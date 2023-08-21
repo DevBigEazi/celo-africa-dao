@@ -8,6 +8,7 @@ import About from "../components/About/About";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import FeaturedArticles from "../components/FeaturedArticles/FeaturedArticles";
+import VisionMission from "../components/VisionMission/VisionMission";
 // import "../styles/styles.css";
 
 export default function Home() {
@@ -54,6 +55,7 @@ export default function Home() {
       </Box> */}
       <Navbar />
       <About />
+      <VisionMission />
       <FeaturedArticles />
       <Faqs />
       <Footer />

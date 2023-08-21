@@ -24,15 +24,9 @@ const ChakraBox = chakra(motion.div, {
 
 const About = () => {
   return (
-    <Container as="section" maxW="auto" bg="#FBF6F1" py="20px" px="15px">
-      <Box
-        wrap={{ base: "wrap" }}
-        display="flex"
-        gap={8}
-        justifyContent="center"
-        alignItems="center"
-        mt="20px"
-      >
+    <>
+      <Container as="section" maxW="auto" bg="#FBF6F1" pt="119px" pl={{md: "75px", base: "22px"}}>
+      <Flex columnGap="222px" alignItems="center" pb="100px">
         <ChakraBox
           animate={{
             scale: [1, 1.2, 1.2, 1, 1],
@@ -45,23 +39,23 @@ const About = () => {
             repeat: Infinity,
             repeatType: "loop",
           }}
-          display={["none", "none", "flex", "flex"]}
+          display={["none", "none", "none", "flex"]}
         >
           <Image src={Coin} />
         </ChakraBox>
 
-        <Flex
-          as="div"
-          gap={3}
-          justifyContent="flex-start"
-          flexDir="column"
-          width="700px"
-        >
-          <Heading as="h2" fontSize="22px">
+        <Box as="div" width={{ base: "700px", "2xl": "100%" }} >
+          <Heading as="h2" 
+            fontSize={{md: "40px", base: "22px"}}
+            fontWeight={{md: "700px", base: "700px"}}
+            fontFamily="PT Serif"
+            mb="12px"
+
+          >
             What is Celo Africa DAO?
           </Heading>
 
-          <Text fontSize="16px">
+          <Text fontSize={{md: "22px", base: "18px"}} fontFamily="Sofia Sans" fontWeight="200px" mb="15px">
             Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate libero et velit interdum, ac aliquet odio mattis. Class
             aptent taciti sociosqu ad litora torquent per conubia nostra, per
@@ -70,7 +64,7 @@ const About = () => {
             condimentum ac, vestibulum eu nisl.
           </Text>
 
-          <Text fontSize="16px">
+          <Text fontSize={{md: "22px", base: "18px"}} fontFamily="Sofia Sans" fontWeight="200px">
             Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate libero et velit interdum, ac aliquet odio mattis. Class
             aptent taciti sociosqu ad litora torquent per conubia nostra, per
@@ -78,28 +72,22 @@ const About = () => {
             lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis
             condimentum ac, vestibulum eu nisl.
           </Text>
-        </Flex>
-      </Box>
-      <Box
-        wrap={{ base: "wrap" }}
-        display="flex"
-        gap={8}
-        justifyContent="center"
-        alignItems="center"
-        mt="20px"
-      >
-        <Flex
-          as="div"
-          gap={3}
-          justifyContent="flex-start"
-          flexDir="column"
-          width="700px"
-        >
-          <Heading as="h2" fontSize="22px">
+        </Box>
+      </Flex>
+
+      <Flex columnGap="72px" alignItems="center" pb="100px">
+        <Box as="div" width={{ base: "700px", "2xl": "100%" }} >
+          <Heading as="h2" 
+            fontSize={{md: "40px", base: "22px"}}
+            fontWeight={{md: "700px", base: "700px"}}
+            fontFamily="PT Serif"
+            mb="12px"
+
+          >
             How does the DAO work?
           </Heading>
 
-          <Text fontSize="16px">
+          <Text fontSize={{md: "22px", base: "18px"}} fontFamily="Sofia Sans" fontWeight="200px" mb="15px">
             Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate libero et velit interdum, ac aliquet odio mattis. Class
             aptent taciti sociosqu ad litora torquent per conubia nostra, per
@@ -107,7 +95,7 @@ const About = () => {
             lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis
             condimentum ac, vestibulum eu nisl.
           </Text>
-          <Text fontSize="16px">
+          <Text fontSize={{md: "22px", base: "18px"}} fontFamily="Sofia Sans" fontWeight="200px">
             Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate libero et velit interdum, ac aliquet odio mattis. Class
             aptent taciti sociosqu ad litora torquent per conubia nostra, per
@@ -115,37 +103,31 @@ const About = () => {
             lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis
             condimentum ac, vestibulum eu nisl.
           </Text>
-        </Flex>
+        </Box>
 
         <ChakraBox display={["none", "none", "flex", "flex"]}>
           <Image src={Friend} />
         </ChakraBox>
-      </Box>
+      </Flex>
 
-      <Box
-        wrap={{ base: "wrap" }}
-        display="flex"
-        gap={8}
-        justifyContent="center"
-        alignItems="center"
-        mt="20px"
-      >
-        <ChakraBox display={["none", "none", "flex", "flex"]}>
+      <Flex columnGap="72px" alignItems="center" pb="191px">
+      <ChakraBox display={["none", "none", "flex", "flex"]}>
           <Image src={Feed} />
         </ChakraBox>
 
-        <Flex
-          as="div"
-          gap={3}
-          justifyContent="flex-start"
-          flexDir="column"
-          width="700px"
-        >
-          <Heading as="h2" fontSize="22px">
+        <Box as="div" width={{ base: "700px", "2xl": "100%" }} >
+          <Heading as="h2" 
+            fontSize={{md: "40px", base: "22px"}}
+            fontWeight={{md: "700px", base: "700px"}}
+            fontFamily="PT Serif"
+            mb="12px"
+
+          >
             How to be a part of the DAO?
+
           </Heading>
 
-          <Text fontSize="16px">
+          <Text fontSize={{md: "22px", base: "18px"}} fontFamily="Sofia Sans" fontWeight="200px" mb="15px">
             Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate libero et velit interdum, ac aliquet odio mattis. Class
             aptent taciti sociosqu ad litora torquent per conubia nostra, per
@@ -153,7 +135,63 @@ const About = () => {
             lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis
             condimentum ac, vestibulum eu nisl.
           </Text>
-          <Text fontSize="16px">
+          <Text fontSize={{md: "22px", base: "18px"}} fontFamily="Sofia Sans" fontWeight="200px">
+            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit interdum, ac aliquet odio mattis. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos. Curabitur tempus urna at turpis condimentum
+            lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis
+            condimentum ac, vestibulum eu nisl.
+          </Text>
+          <Button
+            rightIcon={<ArrowForwardIcon />}
+            bg="#FCF951"
+            borderRadius={{lg: "60px", md: "60px", base: "60px"}}
+            width={{lg: "311px", md: "246px", base: "193px"}}
+            height={{lg: "90px", md: "48px", base: "48px"}}
+            gap="10px"
+            mt="72px"
+            pl="10px"
+            border="1px solid rgba(103, 103, 103, 0.75)"
+            fontSize={{lg: "24px", md: "18px", sm: "16px"}}
+            fontFamily="Sofia Sans"
+            fontWeight="400px"
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Link href="/">Join the DAO</Link>
+          </Button>
+        </Box>
+
+          
+      
+      </Flex>
+{/* 
+      <Flex columnGap="61px" alignItems="center">
+        <ChakraBox display={["none", "none", "flex", "flex"]}>
+          <Image src={Feed} />
+        </ChakraBox>
+
+        <Box as="div" width={{ base: "700px", "2xl": "100%" }} pb="291px">
+          <Heading as="h2" 
+            fontSize={{md: "40px", sm: "22px"}}
+            fontWeight="700px"
+            fontFamily="PT Serif"
+            mb="12px"
+          >
+            How to be a part of the DAO?
+          </Heading>
+
+          <Text fontSize="24px" fontFamily="Sofia Sans" fontWeight="200px" mb="15px">
+            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit interdum, ac aliquet odio mattis. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos. Curabitur tempus urna at turpis condimentum
+            lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis
+            condimentum ac, vestibulum eu nisl.
+          </Text>
+          <Text fontSize="24px" fontFamily="Sofia Sans" fontWeight="200px">
             Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate libero et velit interdum, ac aliquet odio mattis. Class
             aptent taciti sociosqu ad litora torquent per conubia nostra, per
@@ -165,15 +203,26 @@ const About = () => {
           <Button
             rightIcon={<ArrowForwardIcon />}
             bg="#FCF951"
-            width="150px"
-            borderRadius="15px"
+            borderRadius="60px"
+            width="311px"
+            height="90px"
+            gap="15px"
+            mt="72px"
+            border="1px solid rgba(103, 103, 103, 0.75)"
+            fontSize="24px"
+            fontFamily="Sofia Sans"
+            fontWeight="400px"
           >
             <Link href="/">Join the DAO</Link>
           </Button>
-        </Flex>
-      </Box>
+        </Box>
+      </Flex> */}
     </Container>
+    
+  </>
+    
   );
 };
 
 export default About;
+
