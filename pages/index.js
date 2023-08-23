@@ -9,6 +9,7 @@ import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import FeaturedArticles from "../components/FeaturedArticles/FeaturedArticles";
 import VisionMission from "../components/VisionMission/VisionMission";
+import Team from "../components/Team/Team";
 // import "../styles/styles.css";
 
 export default function Home() {
@@ -57,6 +58,7 @@ export default function Home() {
       <About />
       <VisionMission />
       <FeaturedArticles />
+      <Team />
       <Faqs />
       <Footer />
     </>

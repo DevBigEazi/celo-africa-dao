@@ -31,7 +31,7 @@ const currentYear = date.getFullYear();
 
 const Footer = () => {
   return (
-    <Container as="footer" maxW="auto" bg="#FCF951" py="40px">
+    <Container as="footer" maxW="auto" bg="#FCF951" py="40px" pl="31px">
       <Flex gap="4" wrap="wrap" alignItems="center">
         <Link href="/">
           <Image src={Logo} alt="celo" />
