@@ -67,6 +67,8 @@ a {
   }
 }
 
+
+
 #mission {
   background-image: url("../img/mission.svg");
   background-position: center;
@@ -83,6 +85,13 @@ a {
 #mission3 {
   background-image: url("../img/mission.svg");
   background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#team-section{
+  background-image: url('../img/groupBkg.png');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
