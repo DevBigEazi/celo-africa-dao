@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 html,
 body {
   padding: 0;
   margin: 0;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- overflow: hidden;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* overflow: hidden; */
 }
 
 a {
@@ -20,13 +21,12 @@ a {
 #countdown {
   width: 400px;
   padding: 20px;
- display: flex;
+  display: flex;
   text-align: center;
   margin: auto;
 }
 #countdown .box {
   padding: 20px;
- 
 }
 #countdown .col-4:last-child .box {
   border-right-color: transparent;
@@ -65,9 +65,36 @@ a {
     width: 350px;
     padding: 20px;
   }
-
 }
 
+
+
+#mission {
+  background-image: url("../img/mission.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mission2 {
+  background-image: url("../img/mission.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#mission3 {
+  background-image: url("../img/mission.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#team-section{
+  background-image: url('../img/groupBkg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 @media (max-width: 477px) {
   .container {
@@ -80,26 +107,19 @@ a {
     width: 350px;
     padding: 20px;
   }
-
 }
-
 
 @media (max-width: 446px) {
   .container {
-    display: none
+    display: none;
   }
   h1 {
-    display: none
+    display: none;
   }
   #countdown {
-    display: none
+    display: none;
   }
-
 }
-
-
-
-
 
 .preloader {
   position: fixed;
@@ -158,3 +178,5 @@ a {
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
   }
 }
+
+
