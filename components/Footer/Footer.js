@@ -1,33 +1,37 @@
-import { FaGithub, FaSlack, FaTelegramPlane, FaTwitter } from "react-icons/fa";
-import Image from "next/image";
-import Logo from "../../img/image.svg";
-import NextLink from "next/link";
-import { Heading, Box, Text, Link, Container, Flex } from "@chakra-ui/react";
+import { FaGithub, FaSlack, FaTelegramPlane, FaTwitter } from 'react-icons/fa'
+import Image from 'next/image'
+import Logo from '../../img/image.svg'
+import NextLink from 'next/link'
+import { Heading, Box, Text, Link, Container, Flex } from '@chakra-ui/react'
 
 const resources = [
-  { title: "WhitePaper", url: "#" },
-  { title: "FAQs", url: "#" },
-];
+  { title: 'WhitePaper', url: '#' },
+  { title: 'FAQs', url: '#' },
+]
 
 const foundation = [
-  { title: "Contact", url: "#" },
-  { title: "Job Opportunity", url: "#" },
-];
+  { title: 'Contact', url: '#' },
+  { title: 'Job Opportunity', url: '#' },
+]
 
 const developers = [
-  { title: "Documentation", url: "#" },
-  { title: "Developer Guides", url: "#" },
-];
+  { title: 'Documentation', url: '#' },
+  { title: 'Developer Guides', url: '#' },
+]
 
 const community = [
-  { icon: <FaSlack />, url: "https://slack.com" },
-  { icon: <FaTelegramPlane />, url: "https://telegram.com" },
-  { icon: <FaTwitter />, url: "https://twitter.com" },
-  { icon: <FaGithub />, url: "https://github.com" },
-];
+  {
+    icon: <FaSlack />,
+    url:
+      'https://join.slack.com/t/celoafricadao/shared_invite/zt-281ldsznn-2ConLaV739tICqklwsg3Tw',
+  },
+  { icon: <FaTelegramPlane />, url: 'https://telegram.com' },
+  { icon: <FaTwitter />, url: 'https://twitter.com/CeloAfricaDao' },
+  { icon: <FaGithub />, url: 'https://github.com/Khadeeejah/celo-africa-dao' },
+]
 
-const date = new Date();
-const currentYear = date.getFullYear();
+const date = new Date()
+const currentYear = date.getFullYear()
 
 const Footer = () => {
   return (
@@ -40,7 +44,7 @@ const Footer = () => {
           <Heading as="h3" fontFamily="PT-Serif" fontSize="40" color="#1C1C1C">
             Africa DAO
           </Heading>
-        </NextLink> 
+        </NextLink>
       </Flex>
 
       <Flex w="90%" mt="10" justifyContent="space-between" wrap="wrap" gap="5">
@@ -96,7 +100,7 @@ const Footer = () => {
         </Box>
 
         <Box
-          display={{ base: "flex", sm: "none", md: "flex" }}
+          display={{ base: 'flex', sm: 'none', md: 'flex' }}
           flexDir="column"
         >
           <Heading
@@ -104,7 +108,7 @@ const Footer = () => {
             fontSize="xl"
             fontWeight="400"
             fontFamily="PT-sherif"
-            textAlign={{ base: "left", md: "center" }}
+            textAlign={{ base: 'left', md: 'center' }}
           >
             Join the community
           </Heading>
@@ -123,7 +127,7 @@ const Footer = () => {
 
       {/* For Tablet */}
       <Box
-        display={{ base: "none", sm: "flex", md: "none" }}
+        display={{ base: 'none', sm: 'flex', md: 'none' }}
         flexDir="column"
         mt="20"
         mr="8"
@@ -151,7 +155,7 @@ const Footer = () => {
         </Box>
       </Box>
       <Flex
-        display={{ base: "none", sm: "flex" }}
+        display={{ base: 'none', sm: 'flex' }}
         justifyContent="space-between"
         wrap="wrap"
         mt="20"
@@ -171,7 +175,7 @@ const Footer = () => {
 
       {/* For Mobile Phones and small screen */}
       <Box
-        display={{ base: "flex", sm: "none" }}
+        display={{ base: 'flex', sm: 'none' }}
         flexDir="column"
         justifyContent="center"
         wrap="wrap"
@@ -193,7 +197,7 @@ const Footer = () => {
         </Flex>
       </Box>
     </Container>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

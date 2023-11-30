@@ -1,8 +1,8 @@
-import "../../styles/styles.css";
-import Image from "next/image";
-import { FaArrowRight } from "react-icons/fa";
+import '../../styles/styles.css'
+import Image from 'next/image'
+import { FaArrowRight } from 'react-icons/fa'
 
-import { labelData, blogData, eventsData, videosData } from "./data";
+import { labelData, blogData, eventsData, videosData } from './data'
 
 import {
   Container,
@@ -19,11 +19,18 @@ import {
   Text,
   Flex,
   Link,
-} from "@chakra-ui/react";
+} from '@chakra-ui/react'
 
 const FeaturedArticles = () => {
   return (
-    <Container as="section" bg="#fbf6f1" maxWidth="auto" pt="60px" pb="120px">
+    <Container
+      id="blogs"
+      as="section"
+      bg="#fbf6f1"
+      maxWidth="auto"
+      pt="60px"
+      pb="120px"
+    >
       <Heading
         as="h2"
         textAlign="center"
@@ -69,8 +76,8 @@ const FeaturedArticles = () => {
                 <Box
                   as="div"
                   key={i}
-                  h={{ base: "467px", sm: "592px" }}
-                  w={{ base: "247px", sm: "427px" }}
+                  h={{ base: '467px', sm: '592px' }}
+                  w={{ base: '247px', sm: '427px' }}
                 >
                   <List spacing="3">
                     <ListItem as="li">
@@ -81,7 +88,7 @@ const FeaturedArticles = () => {
                         <Image
                           src={blog.authorAvatar}
                           alt="Author"
-                          style={{ borderRadius: "50%" }}
+                          style={{ borderRadius: '50%' }}
                         />
                       </ListItem>
                       <Text
@@ -121,42 +128,50 @@ const FeaturedArticles = () => {
                       <Box
                         as="button"
                         h="28px"
-                        w={{ base: "76px", sm: "87px", md: "121px" }}
+                        w={{ base: '76px', sm: '87px', md: '121px' }}
                         transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
                         bg="#1A0329"
                         borderColor="#ccd0d5"
-                        _hover={{ bg: "#FFFFFF", color: "#1c1a1a" }}
+                        _hover={{ bg: '#FFFFFF', color: '#1c1a1a' }}
                         color="#F7F7F7"
                         fontFamily="Poppins"
-                        fontSize={{ base: "10px", sm: "12px", md: "16px" }}
+                        fontSize={{ base: '10px', sm: '12px', md: '16px' }}
                         fontWeight="300"
                         borderRadius="100px"
                       >
-                        <Link href="/">{blog.button1}</Link>
+                        <Link href="https://celoafricadao.hashnode.dev/writing-for-celo-africa-dao">
+                          {blog.button1}
+                        </Link>
+                        <Link href="https://celoafricadao.hashnode.dev/celo-africa-dao-at-ethsafari-2023-report">
+                          {blog.button11}
+                        </Link>
+                        <Link href="https://celoafricadao.hashnode.dev/decentralized-intelligence-a-web3-ai-summit-report">
+                          {blog.button12}
+                        </Link>
                       </Box>
-                      <Box
+                      {/* <Box
                         as="button"
                         h="28px"
-                        w={{ base: "76px", sm: "87px", md: "121px" }}
+                        w={{ base: '76px', sm: '87px', md: '121px' }}
                         transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
                         bg="#1A0329"
                         borderColor="#ccd0d5"
-                        _hover={{ bg: "#FFFFFF", color: "#1c1a1a" }}
+                        _hover={{ bg: '#FFFFFF', color: '#1c1a1a' }}
                         color="#F7F7F7"
                         fontFamily="Poppins"
-                        fontSize={{ base: "10px", sm: "12px", md: "16px" }}
+                        fontSize={{ base: '10px', sm: '12px', md: '16px' }}
                         fontWeight="300"
                         borderRadius="100px"
                       >
-                        <Link href="/">{blog.button2}</Link>
-                      </Box>
-                      <Text
+                        {/* <Link href="/">{blog.button2}</Link> */}
+
+                      {/* <Text
                         fontFamily="Poppins"
-                        fontSize={{ base: "12px", sm: "14px", md: "16px" }}
+                        fontSize={{ base: '12px', sm: '14px', md: '16px' }}
                         fontWeight="300"
                       >
                         {blog.timeToRead}
-                      </Text>
+                      </Text> */}
                     </Flex>
                   </List>
                 </Box>
@@ -171,7 +186,7 @@ const FeaturedArticles = () => {
               transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
               bg="transparent"
               borderColor="#ccd0d5"
-              _hover={{ bg: "#FFFFFF" }}
+              _hover={{ bg: '#FFFFFF' }}
               color="#1C1C1C"
               fontFamily="sofia-sans"
               fontSize="24px"
@@ -182,7 +197,7 @@ const FeaturedArticles = () => {
               justifyContent="center"
               alignItems="center"
             >
-              <Link href="/">See More</Link>
+              <Link href="https://celoafricadao.hashnode.dev/">See More</Link>
             </Box>
           </TabPanel>
 
@@ -216,23 +231,23 @@ const FeaturedArticles = () => {
                       color="#F7F7F7"
                       fontFamily="PT-serif"
                       fontWeight="700"
-                      fontSize={{ base: "16px", sm: "20px" }}
+                      fontSize={{ base: '16px', sm: '20px' }}
                       pos="relative"
-                      top={{ base: "-32", sm: "-40" }}
+                      top={{ base: '-32', sm: '-40' }}
                       mx="20px"
                     >
                       {event.description}
                     </Text>
                   </ListItem>
                   <ListItem as="li" bgColor={event.bgColor}>
-                    <Text position="relative" top={{ base: "-95", sm: "-121" }}>
+                    <Text position="relative" top={{ base: '-95', sm: '-121' }}>
                       <Image src={event.eventBg} alt="event background" />
                     </Text>
                     <Text
                       color="black"
                       fontFamily="PT-serif"
                       fontWeight="700"
-                      fontSize={{ base: "16px", sm: "20px" }}
+                      fontSize={{ base: '16px', sm: '20px' }}
                       m="20px"
                     >
                       {event.headline}
@@ -250,11 +265,11 @@ const FeaturedArticles = () => {
                         href={event.readmoreLink}
                         fontFamily="sans-serif"
                         fontWeight="700"
-                        fontSize={{ base: "16px", sm: "20px" }}
+                        fontSize={{ base: '16px', sm: '20px' }}
                       >
-                        Read More
+                        View Photos
                       </Link>
-                      <Link href={"/"}>
+                      <Link href={'/'}>
                         <FaArrowRight />
                       </Link>
                     </Text>
@@ -287,7 +302,7 @@ const FeaturedArticles = () => {
                 <List
                   as="ul"
                   h="auto"
-                  w={{ base: "212px", sm: "283px", md: "514px" }}
+                  w={{ base: '212px', sm: '283px', md: '514px' }}
                   key={index}
                 >
                   <ListItem
@@ -295,7 +310,7 @@ const FeaturedArticles = () => {
                     borderRadius="45px"
                     overflow="hidden"
                     w="100%"
-                    h={{ base: "249px", md: "399px" }}
+                    h={{ base: '249px', md: '399px' }}
                     mb="25px"
                   >
                     <iframe
@@ -313,14 +328,14 @@ const FeaturedArticles = () => {
                         <Image
                           src={video.authorAvatar}
                           alt="video author"
-                          style={{ borderRadius: "50%" }}
+                          style={{ borderRadius: '50%' }}
                         />
                       </ListItem>
                       <ListItem>
                         <Flex
                           columnGap="10px"
                           fontFamily="sofian-sans"
-                          fontSize={{ base: "12", sm: "16px" }}
+                          fontSize={{ base: '12', sm: '16px' }}
                           fontWeight="300"
                         >
                           <Text color="#1E1E1E">{video.authorName}</Text>
@@ -328,7 +343,7 @@ const FeaturedArticles = () => {
                         </Flex>
                         <Text
                           fontFamily="PT-Serif"
-                          fontSize={{ base: "14px", sm: "18px" }}
+                          fontSize={{ base: '14px', sm: '18px' }}
                           fontWeight="700"
                         >
                           {video.title}
@@ -336,7 +351,7 @@ const FeaturedArticles = () => {
                         <Flex
                           columnGap="10px"
                           fontFamily="sofian-sans"
-                          fontSize={{ base: "12", sm: "16px" }}
+                          fontSize={{ base: '12', sm: '16px' }}
                           fontWeight="300"
                         >
                           <Text color="#1E1E1E">{video.views}</Text>
@@ -357,7 +372,7 @@ const FeaturedArticles = () => {
               p="10px"
               transition="all 0.2s cubic-bezier(.08,.52,.52,1)"
               bg="transparent"
-              _hover={{ bg: "#FFFFFF" }}
+              _hover={{ bg: '#FFFFFF' }}
               color="#1C1C1C"
               fontFamily="sofia-sans"
               fontSize="24px"
@@ -374,7 +389,7 @@ const FeaturedArticles = () => {
         </TabPanels>
       </Tabs>
     </Container>
-  );
-};
+  )
+}
 
-export default FeaturedArticles;
+export default FeaturedArticles

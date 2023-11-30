@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Accordion,
   AccordionItem,
@@ -7,44 +7,45 @@ import {
   Box,
   Flex,
   Heading,
-} from "@chakra-ui/react";
-import { AiOutlinePlusCircle, AiOutlineMinusCircle } from "react-icons/ai";
+} from '@chakra-ui/react'
+import { AiOutlinePlusCircle, AiOutlineMinusCircle } from 'react-icons/ai'
 
 const faqsData = [
   {
     id: 1,
-    question: "What controls the DAO?",
+    question: 'Who controls the DAO?',
     answer:
-      "do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat.",
+      'The governance of a DAO is typically entrusted to its members, who wield voting authority over proposals that are subject to review by the multisig holders before being presented to the community for voting.',
   },
   {
     id: 2,
-    question: "How does the DAO work?",
+    question: 'How does the DAO work?',
     answer:
-      "do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat.",
+      "The DAO operates independently, allowing individuals and contributors from across Africa to propose and vote on activities. The multisig approves proposals, managing the DAO's treasury.",
   },
   {
     id: 3,
-    question: " How can i be part of the DAO?",
+    question: ' How can i be part of the DAO?',
     answer:
-      "do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat.",
+      'To join Celo Africa DAO, members simply need to join the community page, choose a role, and participate in voting-no specific token amount required.',
   },
   {
     id: 4,
-    question: "When was the DAO created?",
+    question: 'When was the DAO created?',
     answer:
-      "do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat.",
+      'The DAO was established in March 2023 following a successful proposal.',
   },
-];
+]
 
 const Faqs = () => {
   return (
     <>
       <Flex
+        id="faqs"
         as="faq"
         bg="#fbf6f1"
         py="20px"
-        px={{ base: "15px", sm: "80px", md: "120px", lg: "200px" }}
+        px={{ base: '15px', sm: '80px', md: '120px', lg: '200px' }}
         flexDirection="column"
       >
         <Heading
@@ -101,6 +102,6 @@ const Faqs = () => {
         ))}
       </Flex>
     </>
-  );
-};
-export default Faqs;
+  )
+}
+export default Faqs

@@ -1,8 +1,8 @@
-import { Heading, Text, Container, Box, Button } from "@chakra-ui/react";
+import { Heading, Text, Container, Box, Button } from '@chakra-ui/react'
 
-import { ArrowForwardIcon } from "@chakra-ui/icons";
-import Link from "next/link";
-import "../../styles/styles.css";
+import { ArrowForwardIcon } from '@chakra-ui/icons'
+import Link from 'next/link'
+import '../../styles/styles.css'
 
 const VisionMission = () => {
   return (
@@ -12,9 +12,9 @@ const VisionMission = () => {
         maxW="auto"
         pb="144px"
         pl="39px"
-        display={{ base: "none", lg: "flex" }}
-        gap={{ md: "128px", lg: "0px" }}
-        flexDirection={{ base: "column", lg: "row" }}
+        display={{ base: 'none', lg: 'flex' }}
+        gap={{ md: '128px', lg: '0px' }}
+        flexDirection={{ base: 'column', lg: 'row' }}
         background="#1A0329"
       >
         <Box
@@ -35,12 +35,10 @@ const VisionMission = () => {
           </Heading>
 
           <Text fontSize="24px" color="#fff" fontFamily="sofia-sans">
-            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-            lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis
-            condimentum ac, vestibulum eu nisl.
+            Empowering individuals across Africa through decentralized
+            technologies, Celo Africa DAO envisions a future where financial
+            inclusion, economic empowerment, and technological innovation thrive
+            in a borderless, accessible digital ecosystem.
           </Text>
 
           <Button
@@ -58,7 +56,9 @@ const VisionMission = () => {
             borderRadius="60px"
             mt="101px"
           >
-            <Link href="/">Read Whitepaper</Link>
+            <Link href="https://celo.stake.id/#/proposal/85">
+              Read Whitepaper
+            </Link>
           </Button>
         </Box>
 
@@ -75,17 +75,16 @@ const VisionMission = () => {
             </Heading>
 
             <Text fontSize="24px" color="#fff" fontFamily="Sofia Sans">
-              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis. Class
-              aptent taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-              lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis
-              condimentum ac, vestibulum eu nisl.
+              Fostering blockchain adoption in Africa by building a
+              community-driven platform that promotes financial inclusivity,
+              facilitates sustainable development, and harnesses the power of
+              decentralized technologies to uplift individuals and communities.
+              Through collaboration, education, and innovation, we aim to create
+              a more equitable and connected future for Africa.
             </Text>
           </Box>
         </Box>
       </Container>
-
 
       {/* For Tablet */}
       <Container
@@ -93,7 +92,7 @@ const VisionMission = () => {
         maxW="auto"
         pb="144px"
         pl="30px"
-        display={{ base: "none", sm: "inline-block", lg: "none" }}
+        display={{ base: 'none', sm: 'inline-block', lg: 'none' }}
         background="#1A0329"
       >
         <Box>
@@ -108,7 +107,13 @@ const VisionMission = () => {
             Our Vision
           </Heading>
 
-          <Text fontSize="22px" color="#fff" fontFamily="sofia-sans" mb="46px" mr="120px">
+          <Text
+            fontSize="22px"
+            color="#fff"
+            fontFamily="sofia-sans"
+            mb="46px"
+            mr="120px"
+          >
             Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate libero et velit interdum, ac aliquet odio mattis. Class
             aptent taciti sociosqu ad litora torquent per conubia nostra, per
@@ -134,14 +139,13 @@ const VisionMission = () => {
             height="48px"
             mt="46px"
             borderRadius="60px"
-          
           >
             <Link href="/">Read Whitepaper</Link>
           </Button>
         </Box>
 
         <Box as="div" id="mission2" mt="46px" mr="30px">
-          <Box as="div"  >
+          <Box as="div">
             <Heading
               as="h2"
               fontSize="28px"
@@ -153,7 +157,11 @@ const VisionMission = () => {
               Our Mission
             </Heading>
 
-            <Text fontSize="24px" color="#fff" fontFamily="Sofia Sans" ml='128px'
+            <Text
+              fontSize="24px"
+              color="#fff"
+              fontFamily="Sofia Sans"
+              ml="128px"
             >
               Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis. Class
@@ -163,21 +171,18 @@ const VisionMission = () => {
               condimentum ac, vestibulum eu nisl.
             </Text>
           </Box>
-        </Box>        
+        </Box>
       </Container>
 
-
-      
       {/* For Mobile */}
       <Container
         as="section"
         maxW="auto"
         pb="144px"
         pl="22px"
-        display={{base: "inline-block", sm: "none", lg: "none" }}
+        display={{ base: 'inline-block', sm: 'none', lg: 'none' }}
         background="#1A0329"
       >
-           
         <Box as="div">
           <Heading
             as="h2"
@@ -190,7 +195,7 @@ const VisionMission = () => {
             Our Vision
           </Heading>
 
-          <Text fontSize="18px" color="#fff" fontFamily="sofia-sans" mb="46px" >
+          <Text fontSize="18px" color="#fff" fontFamily="sofia-sans" mb="46px">
             Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate libero et velit interdum, ac aliquet odio mattis. Class
             aptent taciti sociosqu ad litora torquent per conubia nostra, per
@@ -216,14 +221,13 @@ const VisionMission = () => {
             height="48px"
             mt="46px"
             borderRadius="60px"
-          
           >
             <Link href="/">Read Whitepaper</Link>
           </Button>
         </Box>
 
-        <Box as="div" id="mission3" mt="46px" mr="30px" >
-          <Box as="div"  >
+        <Box as="div" id="mission3" mt="46px" mr="30px">
+          <Box as="div">
             <Heading
               as="h2"
               fontSize="22px"
@@ -235,8 +239,7 @@ const VisionMission = () => {
               Our Mission
             </Heading>
 
-            <Text fontSize="18px" color="#fff" fontFamily="Sofia Sans" 
-            >
+            <Text fontSize="18px" color="#fff" fontFamily="Sofia Sans">
               Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis. Class
               aptent taciti sociosqu ad litora torquent per conubia nostra, per
@@ -245,10 +248,10 @@ const VisionMission = () => {
               condimentum ac, vestibulum eu nisl.
             </Text>
           </Box>
-        </Box>        
+        </Box>
       </Container>
     </>
-  );
-};
+  )
+}
 
-export default VisionMission;
+export default VisionMission

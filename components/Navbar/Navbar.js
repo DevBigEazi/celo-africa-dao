@@ -8,23 +8,23 @@ import {
   IconButton,
   VStack,
   Spacer,
-} from "@chakra-ui/react";
-import Image from "next/image";
-import Logo from "../../img/celo.svg";
-import NextLink from "next/link";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import { useState } from "react";
+} from '@chakra-ui/react'
+import Image from 'next/image'
+import Logo from '../../img/celo.svg'
+import NextLink from 'next/link'
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
+import { useState } from 'react'
 
 const navList = [
-  { title: "DAO Proposals", path: "#" },
-  { title: "About", path: "/" },
-  { title: "Blog", path: "/" },
-  { title: "Team", path: "/" },
-  { title: "FAQs", path: "/" },
-];
+  { title: 'DAO Proposal ', path: 'https://celo.stake.id/#/proposal/85' },
+  { title: 'About', path: '#about' },
+  { title: 'Blog', path: '#blogs' },
+  { title: 'Team', path: '#team-section' },
+  { title: 'FAQs', path: '#faqs' },
+]
 
 export default function Navbar() {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(false)
 
   return (
     <Flex
@@ -57,11 +57,11 @@ export default function Navbar() {
         spacing="20"
         px="30"
         fontSize={18}
-        display={["none", "none", "none", "flex"]}
+        display={['none', 'none', 'none', 'flex']}
       >
         {navList.map((item, index) => (
           <Box key={index}>
-            <Text >
+            <Text>
               <Link href={item.path} fontSize="17" fontWeight="400">
                 {item.title}
               </Link>
@@ -83,7 +83,7 @@ export default function Navbar() {
           size="md"
           colorScheme="inherit"
           icon={<HamburgerIcon color="black" w={8} h={8} />}
-          display={["flex", "flex", "flex", "none"]}
+          display={['flex', 'flex', 'flex', 'none']}
           aria-label="Open Menu"
           onClick={() => setToggle(true)}
         />
@@ -109,7 +109,7 @@ export default function Navbar() {
               size="md"
               icon={<CloseIcon color="black" />}
               colorScheme="inherit"
-              aria-label={"Close Menu"}
+              aria-label={'Close Menu'}
               onClick={() => setToggle(false)}
             />
             <VStack
@@ -136,5 +136,5 @@ export default function Navbar() {
         )}
       </Box>
     </Flex>
-  );
+  )
 }
