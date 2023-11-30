@@ -4,5 +4,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  assetPrefix: 'celo-africa-dao',
 }
 reactStrictMode: true, (module.exports = nextConfig)
