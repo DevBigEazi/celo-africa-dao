@@ -114,12 +114,10 @@ const VisionMission = () => {
             mb="46px"
             mr="120px"
           >
-            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-            lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis
-            condimentum ac, vestibulum eu nisl.
+            Empowering individuals across Africa through decentralized
+            technologies, Celo Africa DAO envisions a future where financial
+            inclusion, economic empowerment, and technological innovation thrive
+            in a borderless, accessible digital ecosystem.
           </Text>
 
           <Button
@@ -163,12 +161,12 @@ const VisionMission = () => {
               fontFamily="Sofia Sans"
               ml="128px"
             >
-              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis. Class
-              aptent taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-              lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis
-              condimentum ac, vestibulum eu nisl.
+              Fostering blockchain adoption in Africa by building a
+              community-driven platform that promotes financial inclusivity,
+              facilitates sustainable development, and harnesses the power of
+              decentralized technologies to uplift individuals and communities.
+              Through collaboration, education, and innovation, we aim to create
+              a more equitable and connected future for Africa.
             </Text>
           </Box>
         </Box>
@@ -196,12 +194,10 @@ const VisionMission = () => {
           </Heading>
 
           <Text fontSize="18px" color="#fff" fontFamily="sofia-sans" mb="46px">
-            Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-            lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis
-            condimentum ac, vestibulum eu nisl.
+            Empowering individuals across Africa through decentralized
+            technologies, Celo Africa DAO envisions a future where financial
+            inclusion, economic empowerment, and technological innovation thrive
+            in a borderless, accessible digital ecosystem.
           </Text>
 
           <Button
@@ -240,12 +236,12 @@ const VisionMission = () => {
             </Heading>
 
             <Text fontSize="18px" color="#fff" fontFamily="Sofia Sans">
-              Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis. Class
-              aptent taciti sociosqu ad litora torquent per conubia nostra, per
-              inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-              lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis
-              condimentum ac, vestibulum eu nisl.
+              Fostering blockchain adoption in Africa by building a
+              community-driven platform that promotes financial inclusivity,
+              facilitates sustainable development, and harnesses the power of
+              decentralized technologies to uplift individuals and communities.
+              Through collaboration, education, and innovation, we aim to create
+              a more equitable and connected future for Africa.
             </Text>
           </Box>
         </Box>
